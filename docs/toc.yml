@@ -1,0 +1,16 @@
+- name: Introduction
+  href: introduction.md
+- name: Getting Started
+  href: getting-started.md
+- name: Prerequisites
+  href: prerequisites.md
+- name: Azure Setup
+  href: azure-setup.md
+- name: Authentication
+  href: authentication.md
+- name: VS Code Setup
+  href: vscode-setup.md
+- name: API Access
+  href: api-access.md
+- name: Troubleshooting
+  href: troubleshooting.md
