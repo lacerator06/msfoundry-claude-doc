@@ -55,6 +55,7 @@ export ANTHROPIC_FOUNDRY_API_KEY="your-api-key"
 
 **Option B: Set in VS Code settings** (applies to the extension only):
 ![File->Preferences->Settings](image-1.png)
+
 ![VS Code Settings](image.png)
 
 Open VS Code settings (`Ctrl+,`), search for **Claude Code**, and add environment variables:
@@ -65,7 +66,8 @@ Open VS Code settings (`Ctrl+,`), search for **Claude Code**, and add environmen
   "claudeCode.envVars": {
     "CLAUDE_CODE_USE_FOUNDRY": "1",
     "ANTHROPIC_FOUNDRY_RESOURCE": "foundry-resource-name",
-    "ANTHROPIC_FOUNDRY_API_KEY": "your-api-key"
+    "ANTHROPIC_FOUNDRY_API_KEY": "your-api-key",
+    "DISABLE_PROMPT_CACHING_<ClaudeModel>": "1"
   }
 }
 
@@ -81,6 +83,10 @@ For newer version of VS Code, it may look something like this
         {
             "name": "ANTHROPIC_FOUNDRY_RESOURCE",
             "value": "foundry-resource-name"
+        },
+        {
+            "name" : "DISABLE_PROMPT_CACHING_<ClaudeModel>" e.g. "DISABLE_PROMPT_CACHING_HAIKU",
+            "value" : "1"
         }
     ],
     "claudeCode.useTerminal": true,
